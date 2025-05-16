@@ -13,7 +13,7 @@ export default function Hero() {
       className="relative h-[80vh] max-h-[700px] flex items-center justify-center text-center bg-cover bg-center"
     >
       <Image
-        src="/images/hero.jpg"
+        src="/images/hero.jpeg"
         alt="Hero Background"
         fill
         className="object-cover object-[center_80%]"

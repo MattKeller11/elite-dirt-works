@@ -28,7 +28,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/images/contact.jpg"
+              src="/images/contact.JPG"
               alt="Elite Dirt Works Team"
               width={400}
               height={400}

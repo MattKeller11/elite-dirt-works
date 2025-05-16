@@ -11,7 +11,6 @@ const images = [
   "/images/driveway-2.png",
   "/images/driveway-3.JPG",
   "/images/driveway.png",
-  "/images/hero.jpeg",
   "/images/land-clearing-2.jpg",
   "/images/land-clearing.png",
   "/images/long-driveway.png",
