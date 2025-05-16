@@ -120,25 +120,24 @@
     @apply bg-background text-foreground;
   }
 }
-
 .hero-image {
-  object-position: 80% 80% !important; /* Mobile: Closer to right edge */
+  object-position: 20% 20% !important; /* Mobile: Center horizontally, 80% from top */
 }
 
 @media (min-width: 640px) {
   .hero-image {
-    object-position: 70% 80% !important; /* sm: Slightly more centered */
+    object-position: 20% 20% !important; /* sm: Center horizontally, move up to 70% from top */
   }
 }
 
 @media (min-width: 768px) {
   .hero-image {
-    object-position: 60% 80% !important; /* md: Further toward center */
+    object-position: 40% 40% !important; /* md: Center horizontally, move up to 60% from top */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-image {
-    object-position: 50% 80% !important; /* lg: Center (full width) */
+    object-position: 40% 40% !important; /* lg: Center horizontally and vertically */
   }
 }
