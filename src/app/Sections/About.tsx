@@ -42,13 +42,13 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-2">
+            <p className="text-sm sm:text-sm md:text-base text-gray-700 mb-2">
               Elite Dirt Works is driven by an unwavering passion for delivering
               exceptional quality in every project. With a commitment to
               craftsmanship, we transform landscapes with meticulous attention
               to detail.
             </p>
-            <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-3">
+            <p className="text-sm sm:text-sm md:text-base text-gray-700 mb-3">
               Honesty and hard work are at our core, as we collaborate closely
               with you to turn your dreams into reality. Equipped with advanced
               tools, we sculpt the earth with precision and care.
@@ -57,7 +57,7 @@ export default function About() {
               <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1 bg-gradient-to-b from-[#f4a261]/20 to-[#f4a261]/10 p-1 rounded">
                 Our Milestones
               </h3>
-              <ul className="text-xs sm:text-sm md:text-base text-gray-700 list-disc list-inside">
+              <ul className="text-sm sm:text-sm md:text-base text-gray-700 list-disc list-inside">
                 <motion.li
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}

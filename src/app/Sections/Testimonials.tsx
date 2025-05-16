@@ -48,10 +48,10 @@ export default function Testimonials() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <CardContent className="pt-2">
-                <p className="italic text-xs sm:text-sm md:text-base text-gray-700 mb-2">
+                <p className="italic text-sm sm:text-sm md:text-base text-gray-700 mb-2">
                   {testimonial.quote}
                 </p>
-                <p className="font-semibold text-xs sm:text-sm md:text-base text-[#2f2f2f] bg-gradient-to-b from-[#f4a261]/20 to-[#f4a261]/10 p-1 rounded">
+                <p className="font-semibold text-sm sm:text-sm md:text-base text-[#2f2f2f] bg-gradient-to-b from-[#f4a261]/20 to-[#f4a261]/10 p-1 rounded">
                   {testimonial.author}
                 </p>
               </CardContent>
