@@ -10,15 +10,15 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative h-[80vh] max-h-[700px] flex items-center justify-center text-center bg-cover bg-center"
+      className="relative min-h-[500px] max-h-[700px] flex items-center justify-center text-center"
     >
       <Image
         src="/images/hero.jpeg"
         alt="Hero Background"
         fill
-        className="object-cover object-[center_80%] brightness-125"
+        className="object-cover brightness-125 hero-image"
         priority
-        sizes="100vw"
+        sizes="(max-width: 640px) 100vw, 100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-[#2f2f2f]/50"></div>
       <div className="relative z-10 text-white px-4 sm:px-6 lg:px-8">

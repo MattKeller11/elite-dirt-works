@@ -19,6 +19,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/logo.jpg",
   },
+  openGraph: {
+    title: "Elite Dirt Works",
+    description:
+      "Elite Dirt Works offers professional excavation, tree removal, and dirt work services in Zimmerman, MN. Get a free quote today!",
+    url: "https://elite-dirt-works.vercel.app/",
+    siteName: "Elite Dirt Works",
+    images: [
+      {
+        url: "/images/hero.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Elite Dirt Works Hero Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
