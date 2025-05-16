@@ -16,7 +16,7 @@ export default function Hero() {
         src="/images/hero.jpeg"
         alt="Hero Background"
         fill
-        className="object-cover object-[center_80%]"
+        className="object-cover object-[center_80%] brightness-125"
         priority
         sizes="100vw"
       />
