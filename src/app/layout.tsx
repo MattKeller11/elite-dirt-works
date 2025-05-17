@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +15,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elite Dirt Works",
+  title: {
+    default: "Elite Dirt Works",
+    template: "%s | Elite Dirt Works",
+  },
   description:
     "Elite Dirt Works offers professional excavation, tree removal, and dirt work services in Zimmerman, MN. Get a free quote today!",
+  keywords: [
+    "elite",
+    "dirt works",
+    "dirt",
+    "excavation",
+    "landscaping",
+    "tree removal",
+    "land clearing",
+    "dirt work",
+    "land prep",
+    "site clearing",
+    "zimmerman",
+  ],
   icons: {
     icon: "/images/logo.jpg",
   },
@@ -24,7 +41,7 @@ export const metadata: Metadata = {
     title: "Elite Dirt Works",
     description:
       "Elite Dirt Works offers professional excavation, tree removal, and dirt work services in Zimmerman, MN. Get a free quote today!",
-    url: "https://elite-dirt-works.vercel.app/",
+    url: "https://www.elitedirtworksmn.com",
     siteName: "Elite Dirt Works",
     images: [
       {
@@ -39,6 +56,13 @@ export const metadata: Metadata = {
   },
 };
 
+const gtagSnippet = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5HN1V7R0NM');
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,6 +70,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5HN1V7R0NM"
+          strategy="afterInteractive"
+        ></Script>
+        <Script id="gtag-init" strategy="lazyOnload">
+          {gtagSnippet}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

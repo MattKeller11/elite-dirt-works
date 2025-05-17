@@ -26,7 +26,7 @@ export default function Hero() {
           Elite Dirt Works
         </h1>
         <p className="text-xl mb-6 md:text-xl lg:text-2xl max-w-3xl mx-auto drop-shadow-md">
-          Transforming Landscapes with Precision in Zimmerman, MN
+          Enhancing Spaces with Expert Site Clearing and Land Prep in Minnesota
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="#contact" passHref>
