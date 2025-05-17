@@ -43,6 +43,11 @@ export default function Contact() {
       );
       setTimeout(() => setFormStatus("idle"), 3000);
     }
+
+    gtag("event", "send_message_click", {
+      event_category: "message",
+      event_label: "send_message",
+    });
   };
 
   return (

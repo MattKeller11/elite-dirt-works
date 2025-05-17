@@ -4,6 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
+  const sendQuoteEvent = () => {
+    gtag("event", "get_quote_click", {
+      event_category: "quote",
+      event_label: "get_quote",
+    });
+  };
+
+  const sendServicesEvent = () => {
+    gtag("event", "view_services_click", {
+      event_category: "services",
+      event_label: "view_services",
+    });
+  };
+
   return (
     <motion.section
       id="home"
@@ -32,6 +46,7 @@ export default function Hero() {
           <Link href="#contact" passHref>
             <Button
               size="lg"
+              onClick={() => sendQuoteEvent()}
               className="cursor-pointer bg-[#f4a261] hover:bg-[#e76f51] text-white text-base px-5 py-2.5 sm:px-8 sm:py-4 rounded-lg min-w-[200px] min-h-[44px] sm:min-h-[56px]"
             >
               Get a Free Quote
@@ -40,6 +55,7 @@ export default function Hero() {
           <Link href="#services" passHref>
             <Button
               size="lg"
+              onClick={() => sendServicesEvent()}
               variant="outline"
               className="cursor-pointer bg-white text-[#f4a261] border-[#f4a261] hover:bg-[#f4a261]/30 hover:text-[#e76f51] hover:border-[#e76f51] text-base px-5 py-2.5 sm:px-8 sm:py-4 rounded-lg min-w-[200px] min-h-[44px] sm:min-h-[56px]"
             >
